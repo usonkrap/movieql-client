@@ -5,6 +5,8 @@ import client from "./apolloClient";
 import Home from "./Home";
 import Detail from "./Detail";
 
+import "./globalStyles";
+
 function App() {
   return (
     <ApolloProvider client={client}>

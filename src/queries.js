@@ -5,7 +5,6 @@ export const HOME_PAGE = gql`
     movies(limit: 20, rating: 8) {
       id
       title
-      genres
       rating
       medium_cover_image
     }
@@ -23,6 +22,7 @@ export const MOVIE_DETAILS = gql`
       genres
     }
     suggestions(id: $movieId) {
+      id
       medium_cover_image
       title
       rating
